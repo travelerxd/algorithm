@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/plato/study/algorithm/Sort.cpp
+Sort.h
+/home/plato/study/algorithm/Sort.h
+
+/home/plato/study/algorithm/Sort.h
+iostream
+-
+vector
+-
+
+/home/plato/study/algorithm/main.cpp
+iostream
+-
+vector
+-
+Sort.h
+/home/plato/study/algorithm/Sort.h
+

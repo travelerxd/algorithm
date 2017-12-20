@@ -1,0 +1,3 @@
+/home/plato/study/algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/plato/study/algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/plato/study/algorithm/cmake-build-debug/CMakeFiles/algorithm.dir
