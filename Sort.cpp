@@ -15,14 +15,35 @@ void Sort::bubbleSort(vector<int> &a) {
             }
         }
     }
+}
 
+void Sort::bubbleSort2(vector<int> &a) {
+    bool status = true;            // 引入一个状态量，来表明该序列是否有数据交换，如果有数据交换进行下一次排序，反之则已经完成排序
+    for(int i = 0; i < a.size() && status; i++){
+        status = false;
+        for(int j = a.size() - 2; j >= i; j--){
+            if(a[j] > a[j+1]){
+                int temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+                status = true;
+            }
 
+        }
+    }
 }
 
 void Sort::selectSort(vector<int> &a) {
     for(int i = 0; i < a.size(); i++){
-        int key = a[i];
-
+        int min = i;
+        for(int j = i + 1; j < a.size(); j++) {
+            if (a[min] > a[j]) {
+                min = j;
+            }
+        }
+        int temp = a[i];
+        a[i] = a[min];
+        a[min] = temp;
     }
 }
 

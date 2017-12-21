@@ -19,7 +19,7 @@ int main() {
     for(int x:a)
         cout << x << " ";
     cout << endl;
-    mySolution.bubbleSort(a);
+    mySolution.selectSort(a);
     cout << "after insertSort: ";
     for(int x:a)
         cout << x << " ";
