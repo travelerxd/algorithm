@@ -19,7 +19,7 @@ int main() {
     for(int x:a)
         cout << x << " ";
     cout << endl;
-    mySolution.mergeSort(a, 0, a.size() - 1);
+    mySolution.bubbleSort(a);
     cout << "after insertSort: ";
     for(int x:a)
         cout << x << " ";

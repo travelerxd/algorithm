@@ -4,6 +4,30 @@
 
 #include "Sort.h"
 
+
+void Sort::bubbleSort(vector<int> &a) {
+    for(int i = 0; i < a.size(); i++){
+        for(int j = a.size() - 2; j >= i; j--){
+            if(a[j] > a[j+1]){
+                int temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+            }
+        }
+    }
+
+
+}
+
+void Sort::selectSort(vector<int> &a) {
+    for(int i = 0; i < a.size(); i++){
+        int key = a[i];
+
+    }
+}
+
+
+
 void Sort::insertSort(vector<int> &a) {
     for(int i = 1; i < a.size(); i++){
         int key = a[i];
