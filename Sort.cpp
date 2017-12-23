@@ -61,6 +61,25 @@ void Sort::insertSort(vector<int> &a) {
     }
 }
 
+void Sort::shellSort(vector<int> &a) {
+    int n = a.size();
+    int h = 1;
+    while(h < n/3){
+        h = 3*h + 1;
+    }
+    while(h>=1){
+        for(int i = h; i < n; i++){
+            for(int j = i; j >= h && a[j] < a[j-h]; j -= h){
+                int temp = a[j];
+                a[j] = a[j-h];
+                a[j-h] = temp;
+            }
+        }
+        h /= 3;
+    }
+}
+
+
 void Sort::mergeSort(vector<int> &a, int low, int hi) { // in an vector, low == 0, hi == a.size()
     if(low < hi) {
         int mid = (low + hi) / 2;
