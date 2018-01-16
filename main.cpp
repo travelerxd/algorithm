@@ -15,6 +15,7 @@ int main() {
     a.push_back(9);
     a.push_back(1);
     a.push_back(7);
+    a.push_back(11);
     cout << "befor insertSort:";
     for(int x:a)
         cout << x << " ";
